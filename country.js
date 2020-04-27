@@ -7,12 +7,18 @@ $(function(){
     $("#country").html("ทั้งหมดใน "+country);
     $("#country2").html(country);
 
+    
+    
+
     var url = "https://pomber.github.io/covid19/timeseries.json";
 
     $.getJSON(url, function (result) {
 
         var selectedCountry = result[country];
         console.log(selectedCountry);
+
+
+        
 
         
         
@@ -33,6 +39,7 @@ $(function(){
 
         }
 
+        console.log(selectedCountry[147].country);
         
         
 
@@ -40,9 +47,13 @@ $(function(){
         $("#Deaths").append(selectedCountry[selectedCountry.length-1].deaths);
         $("#Recovered").append(selectedCountry[selectedCountry.length-1].recovered);
 
+        $("#confirmed1").append(selectedCountry[selectedCountry.length-1].confirmed);
+        $("#Deaths1").append(selectedCountry[selectedCountry.length-1].deaths);
+        $("#Recovered1").append(selectedCountry[selectedCountry.length-1].recovered);
+
         let myChart = document.getElementById('myChart').getContext('2d');
 
-        
+
         
         let massPopChart = new Chart(myChart, {
 

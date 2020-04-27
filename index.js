@@ -1,6 +1,7 @@
 $(function () {
 
     var url = "https://pomber.github.io/covid19/timeseries.json";
+    
 
     $.getJSON(url, function (result) {
 
@@ -18,6 +19,8 @@ $(function () {
             no++;
 
         }
+        
+      
 
     });
 
@@ -26,3 +29,4 @@ $(function () {
 
 
 })
+
