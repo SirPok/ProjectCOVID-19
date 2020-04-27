@@ -39,7 +39,7 @@ $(function(){
 
         }
 
-        console.log(selectedCountry[147].country);
+        
         
         
 
