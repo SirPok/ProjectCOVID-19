@@ -47,9 +47,6 @@ $(function(){
         $("#Deaths").append(selectedCountry[selectedCountry.length-1].deaths);
         $("#Recovered").append(selectedCountry[selectedCountry.length-1].recovered);
 
-        $("#confirmed1").append(selectedCountry[selectedCountry.length-1].confirmed);
-        $("#Deaths1").append(selectedCountry[selectedCountry.length-1].deaths);
-        $("#Recovered1").append(selectedCountry[selectedCountry.length-1].recovered);
 
         let myChart = document.getElementById('myChart').getContext('2d');
 
