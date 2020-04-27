@@ -129,7 +129,7 @@ $(function(){
 
                     ],
                     fill:false,
-                },{
+                },{ 
 
                     label : 'Recovered',
                     backgroundColor :[
