@@ -40,6 +40,68 @@ $(function(){
         $("#Deaths").append(selectedCountry[selectedCountry.length-1].deaths);
         $("#Recovered").append(selectedCountry[selectedCountry.length-1].recovered);
 
+        let myChart = document.getElementById('myChart').getContext('2d');
+        
+        let massPopChart = new Chart(myChart, {
+
+
+            type : 'line',
+            data:{
+                labels:['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
+                datasets:[{
+                    label : 'Confirm',
+                    backgroundColor :[
+                        'rgba(255, 99, 132)',
+                        'rgba(255, 99, 132)',
+                        'rgba(255, 99, 132)',
+                        'rgba(255, 99, 132)',
+                        'rgba(255, 99, 132)',
+                        'rgba(255, 99, 132)',
+                    ],
+                    
+                    borderColor:[
+                        'rgba(255, 99, 132)'
+                    ],
+                    data:[
+                            617594,
+                            181045,
+                            153060,
+                            106519,
+                            105162,
+                            95072
+                    ],
+                    fill:false,
+                },{
+                    label : 'Thailand',
+                    backgroundColor :[
+                        'rgba(255, 99, 132)',
+                        'rgba(255, 99, 132)',
+                        'rgba(255, 99, 132)',
+                        'rgba(255, 99, 132)',
+                        'rgba(255, 99, 132)',
+                        'rgba(255, 99, 132)',
+                    ],
+                    
+                    borderColor:[
+                        'rgba(255, 99, 132)'
+                    ],
+                    data:[
+                            95072,
+                            105162,
+                            153060,
+                            153060,
+                            181045,
+                            617594
+                    ],
+                    fill:false,
+                }]
+                
+            },
+            option:{
+
+            }
+        });
+
     });
 
 
