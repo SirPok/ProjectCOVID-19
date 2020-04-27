@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+.TextFont{
+
+    font-family: 'Kanit', sans-serif;
+    color: aliceblue;
+    font-size: 50px;
+
+}
+.TextFont2{
+
+    font-family: 'Kanit', sans-serif;
+    color: #f25094;
+    font-size: 50px;
+
+}
+
+.textProcess{
+
+    font-family: 'Kanit', sans-serif;
+    color: beige;
+
+}
